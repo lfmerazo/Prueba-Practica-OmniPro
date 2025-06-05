@@ -2,8 +2,8 @@
 Proyecto de automatización Web y Móvil usando cypress y Appium
 
 Puedes descargar el proyecto de manera individual:
-    Web:
-    Móvil:
+    Web:    https://github.com/lfmerazo/Proyecto-Web-Cypress.git
+    Móvil:  https://github.com/lfmerazo/Proyecto-Mobile-Appium.git
 
 # Pruebas de Automatización - Aplicación Web (Demoblaze)
 ## Instrucciones de Instalación y Ejecución - Aplicación Web
