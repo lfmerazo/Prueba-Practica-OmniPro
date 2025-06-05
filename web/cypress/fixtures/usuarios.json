@@ -1,0 +1,10 @@
+{
+  "valido": {
+    "user": "omniusr",
+    "password": "omnipass"
+  },
+  "invalido": {
+    "user": "omniusr",
+    "password": "omnipass123"
+  }
+}

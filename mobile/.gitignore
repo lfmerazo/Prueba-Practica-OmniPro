@@ -1,0 +1,22 @@
+# Node modules
+node_modules/
+
+# Reportes / logs de WDIO o Appium
+#/reports/
+#/logs/
+#/screenshots/
+#/allure-results/
+
+# Configuración de IDEs
+.idea/
+.vscode/
+
+# Archivos específicos de Android/AVD
+.gradle/
+*.iml
+local.properties
+.DS_Store
+
+# Archivos de iOS (si aplicara algún día)
+Pods/
+*.xcworkspace

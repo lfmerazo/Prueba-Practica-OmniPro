@@ -1,0 +1,4 @@
+{
+  "using": "-android uiautomator",
+  "value": "new UiSelector().text(\"Username and password do not match any user in this service.\")\")"
+}

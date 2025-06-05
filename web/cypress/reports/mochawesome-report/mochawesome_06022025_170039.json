@@ -1,0 +1,168 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 3,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-06-02T22:00:22.383Z",
+    "end": "2025-06-02T22:00:39.243Z",
+    "duration": 16860,
+    "testsRegistered": 4,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "722b9685-b7e7-458f-b224-98cd4d200ce3",
+      "title": "",
+      "fullFile": "cypress/e2e/desktop/demoblaze_desktop.cy.js",
+      "file": "cypress/e2e/desktop/demoblaze_desktop.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8cb85875-be42-49e3-97fb-05686c7341b8",
+          "title": "Demoblaze pruebas en Desktop",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "1) Login y Logout en Desktop",
+              "fullTitle": "Demoblaze pruebas en Desktop 1) Login y Logout en Desktop",
+              "timedOut": null,
+              "duration": 10752,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//home.open();                // O home.visitHome()\nhome.openLoginModal();\nhome.fillLoginForm('usuarioPrueba', 'contraseñaPrueba');\nhome.submitLogin();\n// Validar que el usuario esté logueado, p. ej. que “Welcome <username>” aparezca.\ncy.get('#nameofuser').should('contain.text', 'Welcome usuarioPrueba');\nhome.logout();\n// Verificar que ya aparece botón “Log in” otra vez:\ncy.get('#login2').should('be.visible');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 8000ms: expected '<a#nameofuser.nav-link>' to contain text 'Welcome usuarioPrueba', but the text was ''",
+                "estack": "AssertionError: Timed out retrying after 8000ms: expected '<a#nameofuser.nav-link>' to contain text 'Welcome usuarioPrueba', but the text was ''\n    at Context.eval (webpack://web/./cypress/e2e/desktop/demoblaze_desktop.cy.js:23:26)",
+                "diff": "+ 'Welcome usuarioPrueba'\n"
+              },
+              "uuid": "d12ba505-b799-454c-8ea0-d1c8ad2e2295",
+              "parentUUID": "8cb85875-be42-49e3-97fb-05686c7341b8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "2) Navegar a categoría Laptops y validar listado",
+              "fullTitle": "Demoblaze pruebas en Desktop 2) Navegar a categoría Laptops y validar listado",
+              "timedOut": null,
+              "duration": 1041,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "home.clickCategory('Laptops');\n// Validamos que en la lista de productos aparezca una laptop, ejemplo: \"Sony vaio i5\"\ncy.get('.card-title').should('contain.text', 'Sony vaio i5');",
+              "err": {},
+              "uuid": "f7d0651c-9af3-4ff5-a76c-7f54320c6268",
+              "parentUUID": "8cb85875-be42-49e3-97fb-05686c7341b8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "3) Seleccionar un producto y añadir al carrito",
+              "fullTitle": "Demoblaze pruebas en Desktop 3) Seleccionar un producto y añadir al carrito",
+              "timedOut": null,
+              "duration": 2793,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "home.clickCategory('Laptops');\nhome.clickProductByName('Sony vaio i5');\nproduct.verifyProductTitle('Sony vaio i5');\nproduct.addToCart();\nhome.goToCart();\ncart.verifyProductInCart('Sony vaio i5', '790');",
+              "err": {},
+              "uuid": "952571ff-4f90-4bc1-9d4c-2637828b4fec",
+              "parentUUID": "8cb85875-be42-49e3-97fb-05686c7341b8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "4) Eliminar producto del carrito",
+              "fullTitle": "Demoblaze pruebas en Desktop 4) Eliminar producto del carrito",
+              "timedOut": null,
+              "duration": 2212,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "home.clickCategory('Laptops');\nhome.clickProductByName('Sony vaio i5');\nproduct.addToCart();\nhome.goToCart();\ncart.deleteProduct('Sony vaio i5');\n// Verificar que ya no aparezca el texto “Sony vaio i5” en el tbody\ncy.get('#tbodyid').should('not.contain', 'Sony vaio i5');",
+              "err": {},
+              "uuid": "0cca28e2-9da5-4255-96eb-01e2991d35eb",
+              "parentUUID": "8cb85875-be42-49e3-97fb-05686c7341b8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f7d0651c-9af3-4ff5-a76c-7f54320c6268",
+            "952571ff-4f90-4bc1-9d4c-2637828b4fec",
+            "0cca28e2-9da5-4255-96eb-01e2991d35eb"
+          ],
+          "failures": [
+            "d12ba505-b799-454c-8ea0-d1c8ad2e2295"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 16798,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-06-04T03:10:26.184Z",
+    "end": "2025-06-04T03:11:04.629Z",
+    "duration": 38445,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f5183c15-cc66-47c5-b5ac-a686524267d0",
+      "title": "",
+      "fullFile": "cypress/e2e/desktop/demoblaze_desktop.cy.js",
+      "file": "cypress/e2e/desktop/demoblaze_desktop.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5ee730eb-a2b4-4136-99f0-415dbbe36d7d",
+          "title": "Demoblaze pruebas en Desktop",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "1) Login Success en Desktop",
+              "fullTitle": "Demoblaze pruebas en Desktop 1) Login Success en Desktop",
+              "timedOut": null,
+              "duration": 8249,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('usuarios.json').then(function (_ref) {\n  var valido = _ref.valido;\n  cy.loginDemoBlaze(valido.user, valido.password);\n  // Validar que el usuario esté logueado, p. ej. que “Welcome <username>” aparezca.\n  home.verifyLoginSuccess(valido.user);\n});",
+              "err": {
+                "message": "CypressError: Cypress test was stopped while running this command.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Demoblaze pruebas en Desktop`",
+                "estack": "CypressError: Cypress test was stopped while running this command.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Demoblaze pruebas en Desktop`\n    at cypressErr (https://demoblaze.com/__cypress/runner/cypress_runner.js:77162:18)\n    at Object.errByPath (https://demoblaze.com/__cypress/runner/cypress_runner.js:77216:10)\n    at https://demoblaze.com/__cypress/runner/cypress_runner.js:148636:72",
+                "diff": null
+              },
+              "uuid": "3dcb90b9-c7ec-4f4f-9da0-bc9c56306548",
+              "parentUUID": "5ee730eb-a2b4-4136-99f0-415dbbe36d7d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "3dcb90b9-c7ec-4f4f-9da0-bc9c56306548"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 8249,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHmmss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

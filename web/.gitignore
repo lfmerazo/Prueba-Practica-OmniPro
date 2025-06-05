@@ -1,0 +1,15 @@
+# MacOS metadata
+.DS_Store
+
+# Dependencias de Node
+/node_modules/
+
+# Reportes de Mochawesome
+##/cypress/reports/mochawesome-report/
+
+# Imágenes y videos que Cypress genera automáticamente
+/cypress/screenshots/
+#/cypress/videos/
+
+# Package-lock.json
+/package-lock.json

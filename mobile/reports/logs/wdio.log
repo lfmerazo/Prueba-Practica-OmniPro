@@ -1,0 +1,18 @@
+2025-06-04T20:52:56.005Z INFO @wdio/cli:launcher: Run onPrepare hook
+2025-06-04T20:52:56.009Z INFO @wdio/appium-service: Will spawn Appium process: node /Users/luismedina/Documents/ProyectosAutomatizacion/Cypress-Proyectos/qa-automation/mobile/node_modules/appium/index.js --base-path / --port 65070
+2025-06-04T20:52:56.962Z INFO @wdio/appium-service: Appium started with ID: 96467
+2025-06-04T20:52:56.964Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2025-06-04T20:52:56.964Z INFO @wdio/local-runner: Start worker 0-0 with arg: wdio.conf.js
+2025-06-04T20:53:10.077Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2025-06-04T20:53:10.077Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2025-06-04T20:53:10.078Z INFO @wdio/local-runner: Start worker 0-1 with arg: wdio.conf.js
+2025-06-04T20:53:19.644Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2025-06-04T20:53:19.644Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2025-06-04T20:53:19.644Z INFO @wdio/local-runner: Start worker 0-2 with arg: wdio.conf.js
+2025-06-04T20:53:27.807Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2025-06-04T20:53:27.808Z INFO @wdio/local-runner: Shutting down spawned worker
+2025-06-04T20:53:28.058Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
+2025-06-04T20:53:28.058Z INFO @wdio/local-runner: shutting down
+2025-06-04T20:53:28.058Z INFO @wdio/cli:launcher: Run onComplete hook
+2025-06-04T20:53:28.059Z INFO @wdio/appium-service: Killing entire Appium tree
+2025-06-04T20:53:28.087Z INFO @wdio/appium-service: Process and its children successfully terminated

@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    // Define la carpeta raíz para resolver imports
+    "baseUrl": "cypress",
+
+    // Declara alias de rutas para directorios comunes
+    "paths": {
+      "@pages/*": ["page-objects/*"],
+      "@fixtures/*": ["fixtures/*"],
+      "@support/*": ["support/*"]
+    },
+
+    // Opciones recomendadas para JavaScript en VS Code (no las modifiques)
+    "checkJs": false,
+    "jsx": "preserve"
+  },
+  "include": [
+    "cypress/**/*.js",
+    "cypress/**/*.ts"
+  ]
+}
