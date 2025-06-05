@@ -12,4 +12,4 @@
 #/cypress/videos/
 
 # Package-lock.json
-/package-lock.json
+#/package-lock.json
