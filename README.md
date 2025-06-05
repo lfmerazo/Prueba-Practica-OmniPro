@@ -1,6 +1,10 @@
 # Prueba-Practica-OmniPro
 Proyecto de automatización Web y Móvil usando cypress y Appium
 
+Puedes descargar el proyecto de manera individual:
+    Web:
+    Móvil:
+
 # Pruebas de Automatización - Aplicación Web (Demoblaze)
 ## Instrucciones de Instalación y Ejecución - Aplicación Web
 
